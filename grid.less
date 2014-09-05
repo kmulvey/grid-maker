@@ -1,0 +1,47 @@
+@cell_width:		50px;
+@cell_height:		50px;
+@gutter:				5px;
+
+
+
+/* Columns */
+.col{
+	float: left;
+	.c:first-child{
+		margin-top: 0;
+	}
+	&:first-child .c{
+		margin-left: 0;
+	}
+}
+
+/* Cells */
+.c{
+	margin-top: @gutter;
+	margin-left: @gutter;
+}
+
+/* Cell generator
+ * given: aspect ratio e.g. (4,5)
+ * returns: a class with a name of the given ratio 
+ * with proper width and height values
+ */
+.gen_cell(@w, @h){
+	.c_@{w}x@{h} {
+		width: (@w * @cell_width) + (@w - 1) * @gutter;
+		height: (@h * @cell_height) + (@h - 1) * @gutter;
+	}
+}
+
+
+/* Create our cells */
+.gen_cell(1,1);
+.gen_cell(2,2);
+.gen_cell(3,3);
+.gen_cell(4,3);
+.gen_cell(4,4);
+.gen_cell(4,5);
+.gen_cell(5,5);
+.gen_cell(5,6);
+.gen_cell(6,6);
+.gen_cell(7,7);

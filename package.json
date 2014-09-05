@@ -1,0 +1,12 @@
+{
+  "name": "grid-gen",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "less": "",
+		"grunt" : "",
+		"grunt-contrib-less": ""
+	}
+}
