@@ -8,8 +8,15 @@ module.exports = function(grunt) {
 		      "dist/grid.css": "grid.less"
 		    }
 		  }
+		},
+		watch: {
+		  dist: {
+		    files: ['grid.less'],
+		    tasks: ['less']
+		  }
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.registerTask('default', ['less']);
 };	

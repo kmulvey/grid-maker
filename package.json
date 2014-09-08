@@ -7,6 +7,7 @@
   "dependencies": {
     "less": "",
 		"grunt" : "",
-		"grunt-contrib-less": ""
+		"grunt-contrib-less": "",
+		"grunt-contrib-watch": ""
 	}
 }
