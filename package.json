@@ -8,6 +8,7 @@
     "less": "",
 		"grunt" : "",
 		"grunt-contrib-less": "",
+		"grunt-contrib-jshint": "",
 		"grunt-contrib-watch": ""
 	}
 }
