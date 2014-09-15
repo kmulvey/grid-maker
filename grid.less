@@ -34,10 +34,20 @@
 	}
 }
 
+/* Generate width classes
+ * given: width as a number of columns
+ * returns: a width of that many columns + gutters
+ */
+.gen_width(@w){
+	.w_@{w} {
+		width: (@w * @cell_width) + (@w - 1) * @gutter;
+	}
+}
 
 /* Create our cells */
 .gen_cell(4,4);
 .gen_cell(4,8);
+.gen_cell(5,2);
 .gen_cell(5,4);
 .gen_cell(5,8);
 .gen_cell(7,4);
@@ -47,3 +57,4 @@
 .gen_cell(10,8);
 .gen_cell(12,4);
 .gen_cell(17,8);
+.gen_width(17);
