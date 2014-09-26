@@ -10,4 +10,4 @@ Make arbitrary grids based on multiples of a standard square size.
 
 
 ### Running:
-Simply view and edit the html file in a browser.
+Simply view and edit the html file in a browser
